@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
@@ -35,6 +35,7 @@
         events: 'cavaal93@gmail.com',
         editable: false,
         selectable: false,
+        locale: 'es',
         eventClick: function (event) {
 
           event.jsEvent.cancelBubble = true;
@@ -65,31 +66,31 @@
 <body>
   <header id="header">
     <div class="container">
-      <div id="logo" class="pull-left">
-        <h1><a href="index.html">Casa TOYOPAN</a></h1>
-      </div>
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="Acerca.html">Acerca</a></li>
-          <li class="menu-active"><a href="agenda.html">Agenda</a></li>
-          <li class="menu-has-children"><a href="#services">Actividades</a>
-            <ul>
-              <li><a href="charlas.html">Charlas</a></li>
-              <li><a href="conciertos.html">Conciertos</a></li>
-              <li><a href="salud.html">Salud</a></li>
-              <li><a href="eventos.html">Eventos</a></li>
-              <li><a href="hubComunal.html">Hub Comunal</a></li>
-              <li><a href="capacitaciones.html">Cursos y capacitaciones</a></li>
-            
-            </ul>
-          </li>
 
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+        <div id="logo" class="pull-left">
+            <h1><a href="index.html">Casa TOYOPAN</a></h1>
+        </div>
+
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="menu-active"><a href="Acerca.html">Acerca</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li class="menu-has-children"><a href="">Actividades</a>
+                    <ul>
+                        <li><a href="charlas.html">Charlas</a></li>
+                        <li><a href="conciertos.html">Conciertos</a></li>
+                        <li><a href="salud.html">Salud</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="hubComunal.html">Hub Comunal</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </div>
-  </header>
+</header>
+
 
 
   <section id="heroCalendario">
@@ -144,6 +145,7 @@
   <script src="js/scripts.js"></script>
   <script src="js/main.js"></script>
   <script src='libCalendario/main.js'></script>
+  <script src='libCalendario/locales/es.js'></script>
 
 </body>
 

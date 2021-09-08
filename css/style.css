@@ -257,6 +257,21 @@ h1, h2, h3, h4, h5, h6 {
     /*background-size:cover*/;
   }
 }
+
+
+@media only screen and (max-width: 375px){
+  #heroHub {
+   
+    background-repeat:no-repeat;
+    /*background-position:center bottom*/;
+    /*background-position: 70% 80%*/;
+    background-position: 50% 50%;
+    background-size:500px 660px;
+    /*background-size:cover*/;
+  }
+}
+
+
 #heroHub:before {
   content: "";
   background: rgba(0, 0, 0, 0.135);
@@ -327,6 +342,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+@media (max-width: 375px) {
+  #hero h2 {
+    font-size: 10px;
+    line-height: 10px;
+  }
+}
 
 /*fin hero hub*/
 
@@ -403,22 +425,15 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /**media de celular titulo*/
-@media (max-width: 768px) {
+@media (max-width: 468px) {
   #hero h2 {
-    font-size: 36px;
+    font-size: 26px;
     line-height: 24px;
     margin-bottom: 30px;
   }
 }
 
 
-@media (max-width: 1024px) {
-  #hero h2 {
-    font-size: 36px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
-}
 
 #hero .btn-get-started {
   font-family: "Poppins", sans-serif;

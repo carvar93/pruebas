@@ -427,7 +427,7 @@ h1, h2, h3, h4, h5, h6 {
 /**media de celular titulo*/
 @media (max-width: 468px) {
   #hero h2 {
-    font-size: 26px;
+    font-size: 28px;
     line-height: 24px;
     margin-bottom: 30px;
   }

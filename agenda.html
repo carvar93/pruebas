@@ -17,52 +17,8 @@
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href='libCalendario/main.css' rel='stylesheet' />
-
-  <script type='text/javascript'>
-    document.addEventListener('DOMContentLoaded', function () {
-      var calendarEl = document.getElementById('calendar');
-
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        headerToolbar: {
-          left: 'prev,next',
-          center: 'title',
-          right: 'dayGridMonth,dayGridWeek,dayGridDay,listWeek'
-        },
-
-        timeZone: 'UTC',
-        initialView: 'dayGridMonth',
-        googleCalendarApiKey: 'AIzaSyBwOYz0ebOO_mz6MLz24Oi1mAMsyR9Bpbw',
-        events: 'cavaal93@gmail.com',
-        editable: false,
-        selectable: false,
-        locale: 'es',
-        eventClick: function (event) {
-
-          event.jsEvent.cancelBubble = true;
-          event.jsEvent.preventDefault();
-        }
-      });
-
-      calendar.render();
-
-    });
-  </script>
-
-  <style>
-    #loading {
-      display: none;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-    }
-
-    #calendar {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-  </style>
-
 </head>
+
 <body>
   <header id="header">
     <div class="container">
@@ -91,12 +47,56 @@
     </div>
 </header>
 
+<script type='text/javascript'>
+  document.addEventListener('DOMContentLoaded', function () {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      headerToolbar: {
+        left: 'prev,next',
+        center: 'title',
+        right: 'dayGridMonth,dayGridDay'
+      },
+
+      timeZone: 'UTC',
+      initialView: 'dayGridMonth',
+      googleCalendarApiKey: 'AIzaSyBwOYz0ebOO_mz6MLz24Oi1mAMsyR9Bpbw',
+      events: 'cavaal93@gmail.com',
+      editable: false,
+      selectable: false,
+      locale: 'es',
+      eventClick: function (event) {
+
+        event.jsEvent.cancelBubble = true;
+        event.jsEvent.preventDefault();
+      }
+    });
+
+    calendar.render();
+
+  });
+</script>
+
+<style>
+  #loading {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  #calendar {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+</style>
+
 
 
   <section id="heroCalendario">
 
   </section>
- <main id="main">
+
 
     <div class="container">
       <br/>
@@ -110,7 +110,7 @@
       class="float" target="_blank">
       <i class="fa fa-whatsapp my-float"></i>
     </a>
-  </main>
+  
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
